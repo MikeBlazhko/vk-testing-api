@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  back:
+    image: 'postgres:14-alpine'
+    restart: unless-stopped
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=root
+      - POSTGRES_DB=vk-testing-api-2
+    volumes:
+      - back:/var/lib/postgresql/data
+    ports:
+      - 127.0.0.1:5432:5432
+    networks:
+      back:
+
+volumes:
+  back:
+
+networks:
+  back:

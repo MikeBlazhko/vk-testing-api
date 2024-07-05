@@ -1,0 +1,17 @@
+node_modules
+webserver
+*.md
+*.yml
+*.csv
+./manticore
+.dockerignore
+.eslintrc.js
+.git
+.gitignore
+.husky
+.npmrc
+.nvmrc
+.prettierrc
+.versionrc.json
+dev.*
+Dockerfile
